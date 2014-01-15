@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Convertisseur de font
+http://www.fontsquirrel.com/fontface/generator */
+@font-face { font-family:aardvark; src:url(../fonts/AARDC___.TTF); }
+
+h1, h1 a {
+	font-family: aardvark, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	color: #91979c ! important;;
+	text-shadow: 1px 1px 2px #f7f6f4 ! important;
+	/*background: url(../images/bg-h1.png) no-repeat 0 3px;*/
+	/*padding: 25px;*/
+	margin:0 0 0px 0;
+}
+h1 > em {
+	display: block;
+	font-size: 16px;
+}
+
+h2, h2 a {
+	font-family: aardvark, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #91979c ! important;;
+	text-shadow: 1px 1px 2px #f7f6f4 ! important;;
+	/*background: url(../images/bg-h1.png) no-repeat 0 3px;*/
+	/*padding: 25px;*/
+	margin: 20px 0 0 0;
+}
+h1 a:hover, h2 a:hover {
+	text-decoration: none;
+}
+
+h3 {
+	/*display:inline;*/
+	font-family: aardvark, Arial, sans-serif;
+	color: darkgrey;
+	font-weight: normal;
+	margin: 20px 0 5px 0;
+	font-size: 16px;
+}
+
+h4 {
+	display: inline;
+}
+
+h1, h2, h3, h4 {
+	text-transform: capitalize;
+}
+
+a {
+	text-decoration: none;
+	/*color: navy;*/
+	color: #35b135;
+	/*color: #a2dba2;*/
+}
+a:hover {
+	text-decoration: underline;
+}
+
+p, ul {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-size: 0.9em;*/
+	/*word-spacing: 1px;
+	line-height: 1.3em;*/
+	text-align: justify;
+	/*font-size: 12px;*/
+}
+p img {
+	vertical-align: bottom;
+	margin: 0 5px 0 0;
+}
+
+pre {
+	font-family:"Courier New", Courier, monospace;
+	/*font-size: 0.8em;*/
+}
+
+/* ===================== les listes <ul> =====================================*/
+/*ul li {
+    background-image: url('../images/ico_16x16/bullets_black_2.png');
+    background-repeat: no-repeat;
+    background-position: 0px 5px; 
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.userdata ul li {
+    background-image: none;
+    padding: 0;
+    font-size: 10px;
+}
+
+ul.action {
+    
+}*/
+
+/* ======================== les label <label> ================================*/
+.warning {
+	color:orange;
+	font-weight:bold;
+}
+
+.error {
+	color:red ! important;
+	font-weight:bold;
+}
+.success {
+    color: green ! important;
+}

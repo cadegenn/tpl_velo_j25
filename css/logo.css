@@ -1,0 +1,47 @@
+/* 
+    Document   : logo
+    Created on : 15 avr. 2013, 12:46:01
+    Author     : cadegenn
+    Description:
+        logo's stylesheet
+*/
+
+@font-face {
+	font-family:aardvark;
+	src:url(../fonts/aardc___.ttf);
+}
+
+#logo {
+	float:left;
+	width: 100%
+}
+
+#logo > a {
+	float: left;
+	margin: 2%;
+}
+#logo > a > img {
+	vertical-align: middle;
+}
+#logo a:hover {
+	text-decoration: none ! important;
+}
+
+#logo > div.textArea {
+	margin: 4%;
+}
+#logo span.logoText {
+	font-family: aardvark ! important;
+	font-size: 48px;
+}
+#logo span.logoText a, #logo span.logoText a:hover, #logo span.logoText a:visited {
+	color: #91979c ! important;;
+	text-shadow: 1px 1px 1px #f7f6f4 ! important;;
+}
+
+#logo span.sloganText {
+	font-family: aardvark;
+	font-size: 16px;
+	color: silver ! important;
+	font-style: italic;
+}
