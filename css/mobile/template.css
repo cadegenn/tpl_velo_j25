@@ -1,0 +1,101 @@
+address {
+    display: inline-block;
+}
+
+/* ==================== contact form ========================================*/
+.tip-wrap {
+    background-color: #CDD520;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #222;
+}
+
+/* ===================== article icons ============================================*/
+.article-icons {
+    /*border: 1px silver dotted;*/
+	min-height: 32px;
+	margin: 0 0 5px 0;
+}
+.article-icons-display-true {
+    display: block;
+}
+.article-icons-display-false {
+    display:none;
+}
+.article-icons ul.actions {
+    float: right;
+    margin: 8px;
+}
+ul.actions li {
+    display: inline-block;
+    background-image: none;
+    background-position: 0px 0px;
+    padding: 0;
+    height: 16px;
+}
+.article-icons dl.article-info {
+    margin: 8px 0;
+}
+.article-icons dl.article-info dd {
+    display: inline;
+    margin: 0;
+    font-size: 14px;
+    padding-left: 20px;
+    margin: 8px;
+}
+dl.article-info dd.published {
+    background: url('../images/ico_16x16/calendar.png') no-repeat;
+}
+dl.article-info dd.createdby {
+    background: url('../images/ico_16x16/user.png') no-repeat;
+}
+dl.article-info dd.parent-category-name, dl.article-info dd.category-name {
+    background: url('../images/ico_16x16/newspaper.png') no-repeat;
+}
+dl.article-info dd.hits {
+    background: url('../images/ico_16x16/chart_line') no-repeat;
+}
+
+.article-icons-blog dl.article-info {
+    margin: 0;
+	color: darkgrey;
+}
+.article-icons-blog dl.article-info dd {
+    display: inline;
+    margin: 0;
+    font-size: 14px;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+/*
+ * article
+ */
+ table.category {
+	 width: 90%;
+ }
+/*
+ * blog
+ */
+.items-row {
+	/*clear: left;*/
+	margin-bottom: 50px;
+}
+
+
+/*
+ * contacts
+ */
+.contact-emailto, .contact-telephone {
+	margin: 4px 0;
+}
+.contact-form table, .contact-form textarea {
+	width: 100%;
+}
+
+/*hr {
+	background: url('../images/chaine-maillon.png') repeat-x;
+	background-size: 32px;
+	padding: 6px;
+	border: none;
+}*/

@@ -1,0 +1,52 @@
+/* 
+    Document   : menu
+    Created on : 16 avr. 2013, 12:33:53
+    Author     : cadegenn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+ * @position	top
+ */
+#top ul.menu li {
+	display: inline-block;
+	/*border-left: 2px white solid;*/
+	border-right: 2px white solid;
+	width: 20%;
+	text-align: center;
+}
+#top ul.menu li a {
+	display: block;
+	/*width: 100%;*/
+	padding: 0 3px;
+	/*text-shadow: 1px 1px 2px #f7f6f4;*/
+	text-shadow: 0px 1px 1px white;
+}
+#top ul.menu li a:hover {
+	color: #f7f6f4;
+	background-color: navy;
+	/*text-shadow: -1px -1px 2px black;*/
+}
+
+/*
+ * @position	left
+ */
+#left_sidebar ul.menu, #right_sidebar ul.menu {
+	/*padding: 0 20px;*/
+	text-indent: 20px;
+}
+#left_sidebar ul.menu li:hover, #right_sidebar ul.menu li:hover {
+	background-color: darkgrey;
+	color: silver;
+}
+#left_sidebar ul.menu li a:hover, #right_sidebar ul.menu li a:hover {
+	text-decoration: none;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+	text-align: right;
+}
