@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 janv. 2014, 22:45:31
+    Author     : charly
+*/
+
+#top div.login-greeting, #top div.logout-button {
+	display: inline-block;
+	margin: 0 0 5% 0;
+}
+#top fieldset.userdata, ul.userdata {
+    border: 0;
+	margin: 0 0 5% 0;
+	padding: 0;
+	font-size: 10px;
+}
+#top ul.userdata {
+	display: none;
+	margin: 0 0 4% 0;
+}
+#top ul.userdata li {
+	display: inline-block;
+	padding: 0 3px;
+	min-width: 20%;
+	/*border-right: 2px solid white;*/
+}
+#top #modlgn-remember {
+	vertical-align: middle;
+}

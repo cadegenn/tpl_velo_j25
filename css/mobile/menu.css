@@ -10,10 +10,10 @@
  * @position	top
  */
 #top ul.menu li {
-	display: inline-block;
+	display: block;
 	/*border-left: 2px white solid;*/
-	border-right: 2px white solid;
-	width: 20%;
+	border: 2px white solid;
+	width: 90%;
 	text-align: center;
 }
 #top ul.menu li a {

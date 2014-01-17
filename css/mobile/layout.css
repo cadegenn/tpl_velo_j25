@@ -6,7 +6,7 @@
 html {
 	/*background-image: url(../images/backgrounds/bg_map_oh.png); /* url(../images/backgrounds/bg_map.png);*/
 	/*background-color: #fde5a9; /* #f4f5fa; */
-	background-image: url(../images/backgrounds/bg_map_oh2.png);
+	/*background-image: url(../images/backgrounds/bg_map_oh2.png);*/
 	background-color: #f4f5fa;
 	background-repeat: no-repeat;
 	background-position:center top; 
@@ -17,61 +17,23 @@ html {
 body {
 	opacity: 1;
 	/*height: 100%;*/
-	width:1000px;
+	width:100%;
+	max-width: 100%;
 	margin:auto;
-	/*background-color:#F0FFF0;*/
-	-webkit-box-shadow: 0px 0px 32px #222;
-	-moz-box-shadow: 0px 0px 32px #222;
-	box-shadow: 0px 0px 32px #222;
-	border-right: grey 1px solid;
-	border-left: grey 1px solid;
     /*background-image:url(../images/fond_body.png);*/
 	/*background-image:url(../images/backgrounds/pt_car.jpg);*/
 	background: #f7f6f4;
 }
 
 #header {
-	background-image:url(../images/logo/banniere.png);
-	background-repeat: no-repeat;
-	position:relative;
-	/*margin-left:-200px;*/
-	padding-top:0px;
-	/*min-height:230px;/* la taille du background-image */
+	height: 22px;
+	border: 1px white solid;
 }
 
 /*
  * @position	top
+ * @see top.css
  */
-#top {
-	float: right;
-	margin: 1% 1% 4% 4%;
-	width: 50%;
-	text-align: right;
-}
-/* @position	top */
-#top div.login-greeting, #top div.logout-button {
-	display: inline-block;
-	margin: 0 0 5% 0;
-}
-#top fieldset.userdata, ul.userdata {
-    border: 0;
-	margin: 0 0 5% 0;
-	padding: 0;
-	font-size: 10px;
-}
-#top ul.userdata {
-	display: none;
-	margin: 0 0 4% 0;
-}
-#top ul.userdata li {
-	display: inline-block;
-	padding: 0 3px;
-	min-width: 20%;
-	/*border-right: 2px solid white;*/
-}
-#top #modlgn-remember {
-	vertical-align: middle;
-}
 
 #content_wrapper {
 	display: table;
@@ -79,50 +41,20 @@ body {
 	margin: 1%;
 	padding: 0;
 }
-#left_sidebar, #main_content, #right_sidebar {
-	display: table-cell;
-}
+
+/* mobile device : no sidebar */
 #left_sidebar, #right_sidebar {
-	width:200px;
+	display: none;
 }
-
-/*
- * @position	left
- */
-#left_sidebar fieldset.userdata, ul.userdata {
-    border: 0;
-	margin: 0;
-	padding: 0;
-	font-size: 10px;
-}
-#left_sidebar #modlgn-remember {
-	float: left;
-	vertical-align: middle;
-}
-
 
 #main_content {
     /*padding: 0 20px 0 230px;*/
 	padding: 0 1%;
 }
 
+/* mobile device : no module */
 div.module {
-    background-color: #e5ded5;
-    margin-top: 1%;
-    /*padding: 25px 20px 30px 20px;*/
-	padding: 25px 0;	/* pas de padding sur les côté pour que les <ul> puissent faire des bandes lors du survol */
-    border-radius: 30px;
-    /*min-height: 192px;*/
-}
-div.module h3 {
-    font-family: aardvark, Arial, sans-serif;
-    font-size: 20px;
-    text-align:center;
-    text-transform: uppercase;
-    padding:0;
-    margin: -20px 0 5px 0;
-	color: #91979c ! important;;
-	text-shadow: 1px 1px 2px #f7f6f4 ! important;;
+	display: none;
 }
 
 .breadcrumbs {

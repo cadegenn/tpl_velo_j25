@@ -5,6 +5,12 @@
 http://www.fontsquirrel.com/fontface/generator */
 @font-face { font-family:aardvark; src:url(../fonts/AARDC___.TTF); }
 
+/** {
+	font-size: xx-large;
+	font-weight: bolder;
+
+}*/
+
 h1, h1 a {
 	font-family: aardvark, Arial, sans-serif;
 	font-size: 32px;
