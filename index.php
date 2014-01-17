@@ -13,23 +13,41 @@ $app = JFactory::getApplication();
 <head>
 <jdoc:include type="head" />
 <?php $rootDir = $this->baseurl; ?>
+<?php // load mobile detection API ?>
+<?php require_once "php/MobileDetect/Mobile_Detect.php"; ?>
+<?php // check wether we are on a mobile / tablet / PC ?>
+<?php $mobileDetect = new Mobile_Detect; ?>
 <LINK REL="SHORTCUT ICON" HREF="<?php echo $this->params->get('favicon') ?>" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
+<?php if ($mobileDetect->isMobile()) : // We are connected with a Mobile Device such as a phone ?>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/mobile/logo.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/mobile/menu.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/mobile/layout.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/mobile/template.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/mobile/text.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/mobile/top.css" type="text/css" />
+<?php elseif ($mobileDetect->isTablet()) : // We are connected with a Tablet ?>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/tablet/logo.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/tablet/menu.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/tablet/layout.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/tablet/template.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/tablet/text.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/tablet/top.css" type="text/css" />
+<?php else : // We are probably connected with a PC ?>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/logo.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/menu.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/layout.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/text.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/top.css" type="text/css" />
+<?php endif; ?>
 </head>
 <body>
     <?php //echo $app->getCfg('sitename');?>
     <?php // ------------------ header -------------------------- ?>
     <div id="header">
         <div id="logo">
-			<div id="top">
-				<jdoc:include type="modules" name="top" />
-			</div>
             <?php if ($this->params->get('logoImage') != '') : ?>
                 <a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->params->get('logoImage') ?>" alt="logo" /></a>
             <?php endif; ?>
@@ -42,6 +60,9 @@ $app = JFactory::getApplication();
 				<?php endif; ?>
 			</div>
         </div>
+		<div id="top">
+			<jdoc:include type="modules" name="top" />
+		</div>
     </div>
     
     <?php // --------------------- main body -------------------- ?>
